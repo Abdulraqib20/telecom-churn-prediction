@@ -15,12 +15,22 @@ This project aims to predict customer churn in the telecom industry using machin
 ## Results
 After preprocessing, model training, and hyperparameter tuning, the following performance metrics were achieved on the test set:
 
-- ROC-AUC Score: 0.7215782751713619
-- Precision Score: 0.6616052060737527
-- Recall Score: 0.5436720142602496
-- F1 Score: 0.5968688845401174
-- F2 score of XGBoost Classifier: 0.8050165641268339.
-- Accuracy Score: 0.8050165641268339
+- ROC AUC Score: 0.7645005037588158
+- Recall Score: 0.8101604278074866
+- Accuracy Score: 0.7430801987224982
+- Precision Score: 0.51010101010101
+- F1 Score: 0.6260330578512396
+- F2 Score: 0.7248803827751197
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.91      0.72      0.80      1035
+           1       0.51      0.81      0.63       374
+
+    accuracy                           0.74      1409
+   macro avg       0.71      0.76      0.72      1409
+weighted avg       0.81      0.74      0.76      1409
 
 
 These results indicate that the XGBoost model performs reasonably well in predicting customer churn in the telecom industry.
